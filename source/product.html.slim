@@ -14,3 +14,8 @@
 
     .body
       = markdown product.body
+ main.main-content
+
+      = yield
+   = partial 'partials/shared/footer'
+    = javascript_include_tag 'main', async: true
